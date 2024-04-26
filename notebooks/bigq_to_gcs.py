@@ -25,4 +25,4 @@ for table_id in bigq_tables:
     
     extract_job.result()  # Waits for job to complete.
 
-    print("Exported {}:{}.{} to {}".format(project, bigq_dataset_id, table_id, gcs_destination_uri)
+    print("Exported {}:{}.{} to {}".format(project, bigq_dataset_id, table_id, gcs_destination_uri))
