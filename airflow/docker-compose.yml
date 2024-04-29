@@ -303,10 +303,11 @@ services:
       - ./dags:/opt/airflow/dags
       - /home/sebastian2296/.google/credentials/:/.google/credentials:ro
       
+
+
+
 volumes:
   postgres-db-volume:
-
-
 networks:
   default:
 
