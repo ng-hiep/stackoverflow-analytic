@@ -74,8 +74,7 @@ spark = SparkSession.builder.master("local[*]")\
         .appName('Modidy Schema')\
         .getOrCreate()
 
-spark
-    ._jsc
+spark._jsc \
     .hadoopConfiguration() \
     .set("google.cloud.auth.service.account.json.keyfile","/.google/credentials/google_credentials_project.json")
 
